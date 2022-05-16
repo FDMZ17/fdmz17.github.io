@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node index.js & tailwindcss -i src/input.css -o dist/output.css --watch",
+    "build": "tailwindcss -i src/input.css -o dist/output.css --minify"
   },
   "author": "FDMZ17",
   "license": "ISC",
   "devDependencies": {
+    "express": "^4.18.1",
     "tailwindcss": "^3.0.24"
   }
 }

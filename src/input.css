@@ -31,3 +31,8 @@ body {
   @apply translate-x-3;
 }
 
+.glow {
+  text-shadow:
+  0 0 5px #FFF, 0 0 25px #FFF;
+}
+

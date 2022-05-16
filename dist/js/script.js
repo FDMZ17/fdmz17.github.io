@@ -52,13 +52,16 @@ window.addEventListener("click", function(e) {
 
 const darkToggle = document.querySelector('#dark-toggle');
 const html = document.querySelector('html');
+const MyName = document.querySelector("#MyName");
 
 darkToggle.addEventListener('click', function() {
   if (darkToggle.checked) {
     html.classList.add('dark');
+    MyName.classList.add("glow")
     localStorage.setItem("theme", 'dark');
   } else {
     html.classList.remove('dark');
+    MyName.classList.remove("glow")
     localStorage.setItem("theme", "light");
   }
 });
@@ -74,3 +77,8 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
 } else {
   document.documentElement.classList.remove('dark');
 }
+
+// make my name glow if the theme is dark
+if (localStorage.theme === "dark" || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+  MyName.classList.add("glow");
+} 
