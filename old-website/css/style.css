@@ -1,0 +1,82 @@
+.jumbotron {
+  padding-top: 2rem;
+  background-color: #e2edff;
+}
+
+#projects {
+  background-color: #e2edff;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+.links-about {
+  padding: 10px;
+  display: flex;
+  position: center;
+  align-items: space-around;
+  justify-content: center;
+}
+
+.links-about a {
+  margin: 10px;
+  font-size: 2rem;
+  text-align: center;
+  display: inline-block;
+  color: var(--main-fonts-color);
+}
+
+.links-about a i {
+  cursor: pointer;
+}
+
+.links-about a:hover {
+  color: var(--main-decor-color);
+  text-shadow: 0 0 50px var(--main-decor-color);
+}
+
+
+/* 
+Tools link
+*/
+
+.tools-link {
+  padding: 10px;
+  display: flex;
+  position: center;
+  align-items: space-around;
+  justify-content: center;
+}
+
+.tools-link i {
+  margin: 10px;
+  font-size: 2rem;
+  text-align: center;
+  display: inline-block;
+  color: var(--main-fonts-color);
+}
+
+.tools-link a i {
+  cursor: pointer;
+}
+
+.tools-link a:hover {
+  color: var(--main-decor-color);
+  text-shadow: 0 0 50px var(--main-decor-color);
+}
+
+/* End of tools link */
+
+.form-contact {
+  background-color: #ffffffff;
+  padding: 2rem;
+  padding-bottom: 3rem;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
