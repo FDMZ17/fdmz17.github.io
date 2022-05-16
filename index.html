@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<html lang="en" class="scroll-smooth" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="dist/output.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header section start -->
+  <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+    <div class="container">
+      <div class="flex items-center justify-between relative">
+        <div class="px-4">
+          <a class="font-bold text-gl text-primary block py-6" href="#home">FDMZ17</a>
+        </div>
+        <div class="flex items-center px-4">
+          <button name="hamburger" id="hamburger" type="button" class="block absolute right-4 lg:hidden">
+            <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+            <span class="hamburger-line transition duration-300 ease-in-out"></span>
+            <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+          </button>
+          <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+            <ul class="block lg:flex">
+              <li class="group">
+                <a class="text-base text-dark py-2 mx-8 flex group-hover:text-primary" href="#home">Home</a>
+              </li>
+              <li class="group">
+                <a class="text-base text-dark py-2 mx-8 flex group-hover:text-primary" href="#about">About me</a>
+              </li>
+              <li class="group">
+                <a class="text-base text-dark py-2 mx-8 flex group-hover:text-primary" href="#portfolio">Portfolio</a>
+              </li>
+             <li class="group">
+                <a class="text-base text-dark py-2 mx-8 flex group-hover:text-primary" href="#tech">Technology</a>
+              </li>
+              <li class="group">
+                <a class="text-base text-dark py-2 mx-8 flex group-hover:text-primary" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header section end! -->
+
+  <!-- Hero section start! -->
+  <section id="home" class="pt-36">
+    <div class="container">
+      <div class="flex flex-wrap">
+        <div class="w-full self-center px-4 lg:w-1/2">
+          <h1 class="text-base font-semibold text-primary md:text-xl">Hello everyone!, 
+          <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">I'm FDMZ17</span></h1>
+          <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">Student & 
+            <span class="text-dark">Developer</span></h2>
+          <p class="font-medium text-secondary mb-10 leading-relax">Currently learning Javascript [node.js] and Tailwind css</p>
+          <a href="#contact" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Contact me!</a>
+        </div>
+        <div class="w-full self-end px-4 lg:w-1/2">
+          <div class="mt-10 relative lg:right-0 lg:mt-9">
+            <img src="profile.png" alt="FDMZ17" class="max-w-full mx-auto"/>
+            <span class="absolute bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#14B8A6" d="M53.7,-42.8C67.1,-26.1,73.5,-3.9,67.1,11.8C60.7,27.4,41.4,36.6,23.3,43.5C5.2,50.3,-11.7,54.8,-27.6,49.9C-43.5,45.1,-58.5,30.9,-62,14.4C-65.6,-2.1,-57.8,-20.9,-45.5,-37.3C-33.3,-53.7,-16.6,-67.6,1.8,-69.1C20.2,-70.5,40.4,-59.4,53.7,-42.8Z" transform="translate(100 100)" />
+              </svg>
+            </span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero section end! -->
+  
+  <!-- About section start! -->
+  <section id="about" class="pt-36 pb-32">
+    <div class="container">
+      <div class="flex flex-wrap">
+        <div class="w-full px-4 mb-10 lg:w-1/2">
+          <h4 class="font-bold uppercase text-primary text-lg mb-3">About me!</h4> 
+          <h2 class="font-bold text-dark text-3xl mb-5 max-w-xl lg:text-4xl">Language and tools: Linux, Electron, Git, NodeJS, HTML, CSS, JS, Vim</h2>
+          <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">I’m currently learning JS and CSS | The projects I'm working on are: Expressbin </p>
+        </div>
+        <div class="w-full px-4 lg:w-1/2">
+          <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">My hobby</h3>
+          <p class="font-medium text-base text-secondary mb-6 lg:text-lg">Coding, gaming & linux | I’m currently learning JS and CSS | The projects I'm working on are: Expressbin </p>
+          <div class="flex items-center">
+            <!-- Youtube -->
+            <a class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white" href="https://www.youtube.com/channel/UCtEVVRGdrXniY_pn78JWTCw" target="_blank">
+             <svg width="20" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg> 
+            </a>
+
+            <!-- Github -->
+           <a class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white" href="https://github.com/FDMZ17" target="_blank">
+            <svg width="20" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+           </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About section end!-->
+
+  <!-- Portfolio start -->
+  <section id="portfolio" class="pt-36 pb-16 bg-slate-100">
+    <div class="container">
+      <div class="w-full px-4">
+        <div class="max-w-xl mx-auto text-center mb-16">
+          <h4 class="font-semibold text-lg text-primary mb-2">Portfolio</h4>
+          <p class="font-bold text-dark text-3xl mb-4 sm:text-4sl lg:text-5xl">My Projects</p>
+          <p class="font-medium text-md text-secondary">The projects I'm working on are: Expressbin</p>
+        </div>
+      </div>
+      <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+        <div class="mb-12 p-4 md:w-1/2">
+          <div class="rounded-md shadow-md overflow-hidden">
+            <img src="https://fdmz17.eu.org/img/svg/projects1.svg" alt="Expressbin" width="w-full" />
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Expressbin</h3>
+            <p class="font-medium text-base text-secondary">Expressbin is an open-source Pastebin software written in Javascript/node.js</p>
+          </div>
+        </div>
+         <div class="mb-12 p-4 md:w-1/2">
+          <div class="rounded-md shadow-md overflow-hidden">
+            <img src="https://fdmz17.eu.org/img/svg/projects1.svg" alt="Expressbin" width="w-full" />
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Expressbin</h3>
+            <p class="font-medium text-base text-secondary">Expressbin is an open-source Pastebin software written in Javascript/node.js</p>
+          </div>
+        </div>
+       <div class="mb-12 p-4 md:w-1/2">
+          <div class="rounded-md shadow-md overflow-hidden">
+            <img src="https://fdmz17.eu.org/img/svg/projects1.svg" alt="Expressbin" width="w-full" />
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Expressbin</h3>
+            <p class="font-medium text-base text-secondary">Expressbin is an open-source Pastebin software written in Javascript/node.js</p>
+          </div>
+        </div>
+        <div class="mb-12 p-4 md:w-1/2">
+          <div class="rounded-md shadow-md overflow-hidden">
+            <img src="https://fdmz17.eu.org/img/svg/projects1.svg" alt="Expressbin" width="w-full" />
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Expressbin</h3>
+            <p class="font-medium text-base text-secondary">Expressbin is an open-source Pastebin software written in Javascript/node.js</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Portfolio end -->
+  <!-- Tech section start-->
+  <section id="tech" class="pt-36 pb-32 bg-slate-700"> 
+    <div class="container">
+      <div class="w-full px-4">
+        <div class="max-w-xl mx-auto text-center mb-16">
+          <h4 class="font-semibold text-lg text-primary mb-2">Technology</h4>
+          <p class="font-bold text-dark text-3xl mb-4 sm:text-4sl lg:text-5xl text-white">Language & Tools</p>
+          <p class="font-medium text-md text-secondary md:text-lg">The projects I'm working on are: Expressbin</p>
+        </div>
+      </div>
+      <div class="w-full px-4">
+        <div class="flex flex-wrap items-center justify-center">  
+          <img src="dist/img/linux.svg" alt="Linux" class="max-w-[40px] mx-4 py-4"/> 
+          <img src="dist/img/docker.svg" alt="Docker" class="max-w-[40px] mx-4 py-4"/> 
+          <img src="dist/img/vim.svg" alt="vim" class="max-w-[40px] mx-4 py-4"/> 
+          <img src="dist/img/nodejs.svg" alt="NodeJS" class="max-w-[40px] mx-4 py-4"/>
+          <img src="dist/img/git.svg" alt="Git" class="max-w-[40px] mx-4 py-4"/>
+          <img src="dist/img/javascript.svg" alt="javascript" class="max-w-[40px] mx-4 py-4"/>
+          <img src="dist/img/py.svg" alt="python" class="max-w-[40px] mx-4 py-4"/>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact section start -->
+  <section id="contact" class="pt-36 pb-32">
+    <div class="container">
+      <div class="w-full px-4">
+        <div class="max-w-xl mx-auto text-center mb-16">
+          <h4 class="mb-2 text-lg font-semibold text-primary">Contact</h4>
+          <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Contact me</h2>
+        </div>
+      </div>
+      <form>
+        <div class="w-full lg:w-2/3 lg:mx-auto">
+        <div class="w-full px-4 mb-8">
+          <label for="name" class="text-base font-bold text-primary">Name</label>
+          <input type="text" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"/>
+          <label for="email" class="text-base font-bold text-primary">Email</label>
+          <input type="email" id="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"/>
+          <label for="message" class="text-base font-bold text-primary">Message</label>
+          <textarea type="text" id="message" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
+        </div>
+        <div class="w-full px-4">
+          <button class="text-base font-semi-bold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Send!</button>
+        </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- Contact section end -->
+  
+  <!-- Footer start! -->
+  <footer class="bg-dark pt-24 pb-12">
+    <div class="container">
+      <div class="flex flex-wrap">
+        <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+          <h2 class="font-bold text-4xl text-white mb-5">FDMZ17</h2>
+          <h3 class="font-bold text-2xl mb-2">Email:</h3>
+          <p>developer@fdmz17.eu.org</p>
+        </div>
+        <div class="w-full px-4 mb-12 md:w-1/3">
+          <h3 class="font-semibold text-xl text-white mb-3">Other links:</h3>
+          <ul class="text-slate-300">
+            <li>
+              <a class="inline-block text-base hover:text-primary mb-3" href="https://github.com/FDMZ17">Github</a>
+            </li>
+            <li>
+              <a class="inline-block text-base hover:text-primary mb-3" href="https://guilded.gg/fdmz17dev">Guilded</a>  
+            </li>
+          </ul>
+        </div>
+       <div class="w-full px-4 mb-12 md:w-1/3">
+          <h3 class="font-semibold text-xl text-white mb-3">Navigation:</h3>
+          <ul class="text-slate-300">
+            <li>
+              <a class="inline-block text-base hover:text-primary mb-3" href="#home">Home</a>
+            </li>
+              <a class="inline-block text-base hover:text-primary mb-3" href="#about">About me</a>  
+            <li> 
+              <a class="inline-block text-base hover:text-primary mb-3" href="#portfolio">Portfolio</a>
+            </li>
+              <a class="inline-block text-base hover:text-primary mb-3" href="#tech">Technology</a>
+            <li>
+              <a class="inline-block text-base hover:text-primary mb-3" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="w-full pt-10 border-t border-slate-700">
+        <div class="flex items-center justify-center mb-5">
+            <!-- Youtube -->
+            <a class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white" href="https://www.youtube.com/channel/UCtEVVRGdrXniY_pn78JWTCw" target="_blank">
+             <svg class="fill-current" width="20" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg> 
+            </a>
+            <!-- Github -->
+           <a class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white" href="https://github.com/FDMZ17" target="_blank">
+            <svg class="fill-current" width="20" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+           </a>
+        </div>
+        <p class="font-medium text-xs text-slate-500 text-center">Made by <a class="font-bold text-primary" href="https://github.com/FDMZ17" target="_blank">FDMZ17</a> | Using <a class="font-bold text-sky-500" href="https://tailwindcss.com" target="_blank">Tailwind CSS</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Tech section end -->
+  <!-- Javascript -->
+  <script src="dist/js/script.js"></script>
+</body>
+</html>
