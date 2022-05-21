@@ -57,28 +57,22 @@ const MyName = document.querySelector("#MyName");
 darkToggle.addEventListener('click', function() {
   if (darkToggle.checked) {
     html.classList.add('dark');
-    MyName.classList.add("glow")
+    MyName.classList.add("glow");
     localStorage.setItem("theme", 'dark');
   } else {
     html.classList.remove('dark');
-    MyName.classList.remove("glow")
+    MyName.classList.remove("glow");
     localStorage.setItem("theme", "light");
   }
 });
 
-if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-  darkToggle.checked = true;
-} else {
-  darkToggle.checked = false;
-}
 
 if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
   document.documentElement.classList.add('dark');
+  MyName.classList.add("glow");
+  darkToggle.checked = true;
 } else {
   document.documentElement.classList.remove('dark');
+  darkToggle.checked = false;
 }
 
-// make my name glow if the theme is dark
-if (localStorage.theme === "dark" || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-  MyName.classList.add("glow");
-} 
