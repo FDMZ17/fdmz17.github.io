@@ -76,3 +76,18 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
   darkToggle.checked = false;
 }
 
+// Animate on scroll!
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if(entry.isIntersecting) {
+      entry.target.classList.add("showProjectAnimate");
+    } else {
+      entry.target.classList.remove("showProjectAnimate");
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll(".hideProjectAnimate");
+hiddenElements.forEach((elements) => observer.observe(elements));
