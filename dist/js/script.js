@@ -25,19 +25,19 @@ hamburger.addEventListener("click", function() {
 
 // Contact form!
 const scriptURL = "https://script.google.com/macros/s/AKfycbyBPkZ5NiKPp-8YbKvJgF5ZOS69NrUCUFDiUMnyfwGFEqrpar99rbC3nmOq1TeXRDZX/exec";
-const form = document.forms["contact-form"];
+//const form = document.forms["contact-form"];
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  fetch(scriptURL, {
-      method: "POST",
-      body: new FormData(form)
-    })
-    .then((response) => {
-      form.reset();
-      console.log("Success!", response);
-    });
-});
+//form.addEventListener("submit", (e) => {
+//  e.preventDefault();
+//  fetch(scriptURL, {
+//      method: "POST",
+//      body: new FormData(form)
+//    })
+//    .then((response) => {
+//      form.reset();
+//     console.log("Success!", response);
+//    });
+//});
 
 // clock outside hamburger
 window.addEventListener("click", function(e) {
